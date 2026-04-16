@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.env
+.vscode/
+Thumbs.db
+# Build outputs
+dist/
+build/

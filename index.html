@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">Jude</div>
+            <nav class="nav-menu">
+                <a href="#section1" class="nav-link">Home</a>
+                <a href="#section2" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#section3" class="nav-link">Services</a>
+                <a href="#section4" class="nav-link">Skills</a>
+                <a href="#" class="nav-link" id="contactNavLink">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+    <!-- Edge Glowing Lines -->
+    <div class="edge-line edge-line-left"></div>
+    <div class="edge-line edge-line-right"></div>
+
+    <!-- Section 1: Introduction -->
+    <section id="section1" class="section">
+        <div class="intro-container">
+            <div class="intro-text-content">
+                <h1 class="intro-title"><span class="typing-text"></span><span class="cursor">|</span></h1>
+                <p class="intro-description reveal-text">
+                    Crafting beautiful, responsive, and user-friendly web experiences through creative design and clean code. 
+                    I transform ideas into engaging digital solutions that captivate users and drive results.
+                </p>
+            </div>
+            <div class="intro-logo-side">
+                <img src="images/Logo.png" alt="Logo" class="intro-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: About Me -->
+    <section id="section2" class="section reveal-section">
+        <div class="about-container">
+            <div class="about-text-side reveal-left">
+                <h2 class="section-heading">About Me</h2>
+                <p class="about-description reveal-text">
+                    Hi, I'm Jude Michael A. Estrada, a passionate web developer with expertise in creating beautiful, functional, 
+                    and user-centered digital experiences. I specialize in front-end development and web design, bringing ideas to 
+                    life through clean code and modern design principles.
+                </p>
+                <p class="about-description reveal-text">
+                    With a keen eye for detail and a love for innovation, I strive to build websites that not only look great 
+                    but also provide seamless user experiences across all devices.
+                </p>
+                <div class="button-group">
+                    <button id="getInTouchBtn" class="cta-button magnetic-btn">Get In Touch</button>
+                    <a href="resume/Estrada_Jude_Michael_A_CV.pdf" target="_blank" class="cta-button resume-button magnetic-btn">Download Resume</a>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-box reveal-scale">
+                        <span class="stat-text">1 Year Experience</span>
+                    </div>
+                    <div class="stat-box reveal-scale">
+                        <span class="stat-text">2 Projects Completed</span>
+                    </div>
+                    <div class="stat-box reveal-scale">
+                        <span class="stat-text">100% Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-side">
+                <div class="profile-container">
+                    <img src="images/Judes.jpg" alt="Jude Michael A. Estrada" class="profile-pic profile-pic-default">
+                    <img src="images/Judes2.jpg" alt="Jude Michael A. Estrada" class="profile-pic profile-pic-hover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section reveal-section">
+        <div class="education-container">
+            <div class="education-image-side reveal-left">
+                <div class="thesis-container">
+                    <div class="thesis-image-wrapper">
+                        <img src="images/thesis.jpg" alt="Best in Thesis Project" class="thesis-image">
+                    </div>
+                    <div class="thesis-badge-container">
+                        <a class="thesis-badge magnetic-btn" href="https://catfishguard.netlify.app/" target="_blank" rel="noopener noreferrer">View Webpage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="education-text-side reveal-right">
+                <h2 class="section-heading">Education</h2>
+                <p class="education-description reveal-text">
+                    I proudly graduated with a <strong>Bachelor of Science in Information Technology</strong> from 
+                    <strong>Assumption College of Davao</strong>, where I developed a strong foundation in software development, 
+                    web technologies, and system design. Throughout my academic journey, I immersed myself in cutting-edge 
+                    technologies and best practices, consistently pushing the boundaries of innovation.
+                </p>
+                <p class="education-description reveal-text">
+                    My education equipped me with comprehensive knowledge in programming languages, database management, 
+                    network systems, and software engineering principles. I actively participated in various academic projects 
+                    that honed my problem-solving skills and fostered my passion for creating impactful digital solutions. 
+                    The rigorous curriculum and hands-on experience prepared me to tackle real-world challenges with confidence 
+                    and creativity.
+                </p>
+                <p class="education-year reveal-scale">2025-2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Portfolio Works -->
+    <section id="section3" class="section reveal-section">
+        <div class="section-content">
+            <h2 class="section-heading reveal-up">My Portfolio Works</h2>
+            <p class="portfolio-intro reveal-text">A showcase of my recent projects and creative endeavors</p>
+            
+            <div class="works-grid">
+                <div class="work-box tilt-card" data-work="1">
+                    <div class="work-placeholder with-image">
+                        <img src="images/Catfish.png" alt="Catfish Guard project preview" class="work-image">
+                    </div>
+                    <p class="work-title">Catfish Guard App</p>
+                </div>
+                <div class="work-box tilt-card" data-work="2">
+                    <div class="work-placeholder">
+                        <span class="work-number">02</span>
+                    </div>
+                    <p class="work-title">Project Two</p>
+                </div>
+                <div class="work-box tilt-card" data-work="3">
+                    <div class="work-placeholder">
+                        <span class="work-number">03</span>
+                    </div>
+                    <p class="work-title">Project Three</p>
+                </div>
+                <div class="work-box tilt-card" data-work="4">
+                    <div class="work-placeholder">
+                        <span class="work-number">04</span>
+                    </div>
+                    <p class="work-title">Project Four</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Skills Keyboard -->
+    <section id="section4" class="section reveal-section">
+        <div class="section-content">
+            <h2 class="section-heading reveal-up">My Tech Stack</h2>
+            <p class="keyboard-hint reveal-text">Click on any tool to learn more about my experiences.</p>
+            <div class="keyboard-container reveal-scale">
+                <button class="key-button" data-tech="JavaScript">
+                    <img src="images/icons/javascript.png" alt="JavaScript" class="tech-icon">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                </button>
+                <button class="key-button" data-tech="Firebase">
+                    <img src="images/icons/firebase.png" alt="Firebase" class="tech-icon">
+                    <span>Firebase</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                </button>
+                <button class="key-button" data-tech="PHP">
+                    <img src="images/icons/php.png" alt="PHP" class="tech-icon">
+                    <span>PHP</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                </button>
+                <button class="key-button" data-tech="MySQL">
+                    <img src="images/icons/mysql.png" alt="MySQL" class="tech-icon">
+                    <span>MySQL</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                </button>
+                <button class="key-button" data-tech="HTML">
+                    <img src="images/icons/html.png" alt="HTML" class="tech-icon">
+                    <span>HTML</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+                </button>
+                <button class="key-button" data-tech="CSS">
+                    <img src="images/icons/css.png" alt="CSS" class="tech-icon">
+                    <span>CSS</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                </button>
+                <button class="key-button" data-tech="Python">
+                    <img src="images/icons/python.png" alt="Python" class="tech-icon">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+                </button>
+                <button class="key-button" data-tech="Flutter">
+                    <img src="images/icons/flutter.png" alt="Flutter" class="tech-icon">
+                    <span>Flutter</span>
+                    <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="contactCloseBtn">&times;</span>
+            <h3>Get In Touch</h3>
+            <p class="modal-intro">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <form id="contactForm" class="contact-form">
+                <input type="email" id="email" name="email" placeholder="Your Email" required class="form-input">
+                <textarea id="message" name="message" placeholder="Your Message" rows="6" required class="form-textarea"></textarea>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Work Detail Modal -->
+    <div id="workModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="workCloseBtn">&times;</span>
+            <h3 id="workTitle">Project Title</h3>
+            <div id="workBody" class="work-body">
+                <p>Project description goes here...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech Info Modal -->
+    <div id="techModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="techCloseBtn">&times;</span>
+            <h3 id="techTitle">Technology</h3>
+            <div id="techBody" class="tech-body">
+                <!-- dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
